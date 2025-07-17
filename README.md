@@ -7,6 +7,8 @@ A modular Python toolkit for working with Appwrite databases, including connecti
 - `config.py` - Appwrite configuration loader
 - `appwrite_client.py` - Appwrite client initialization and connection management
 - `main.py` - Main script to test connection and display database information
+- `duplicate_collection.py` - Script to duplicate a collection with all its data
+- `empty_collection.py` - Script to clear all documents from a specific collection
 - `requirements.txt` - Python dependencies
 - `.env` - Environment variables (not tracked in git)
 
@@ -27,6 +29,22 @@ Run the main script to test your Appwrite connection:
 
 ```bash
 python main.py
+```
+
+### Duplicate Collection
+
+Run the duplication script to copy a collection:
+
+```bash
+python duplicate_collection.py
+```
+
+### Empty Collection
+
+Run the empty script to clear all documents from a collection:
+
+```bash
+python empty_collection.py
 ```
 
 This will:
