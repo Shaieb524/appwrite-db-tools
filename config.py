@@ -10,6 +10,8 @@ class AppwriteConfig:
         self.database_id = os.getenv('APPWRITE_DATABASE_ID')
         self.user_emails_collection_id = os.getenv('APPWRITE_USER_EMAILS_COLLECTION_ID')
         self.api_key = os.getenv('APPWRITE_API_KEY')
+        self.new_collection_id = os.getenv('NEW_COLLECTION_ID')
+        self.new_collection_name = os.getenv('NEW_COLLECTION_NAME')
         self._validate_config()
     
     def _validate_config(self):
@@ -18,7 +20,9 @@ class AppwriteConfig:
             'project_id': self.project_id,
             'database_id': self.database_id,
             'user_emails_collection_id': self.user_emails_collection_id,
-            'api_key': self.api_key
+            'api_key': self.api_key,
+            'new_collection_id': self.new_collection_id,
+            'new_collection_name': self.new_collection_name
         }
         
         missing_fields = [field for field, value in required_fields.items() if not value]
