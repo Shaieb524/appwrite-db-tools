@@ -1,3 +1,5 @@
+https://wellrounded.engineer/building-simple-tools-for-appwrite-database-management/
+
 # Appwrite Database Tools
 
 A modular Python toolkit for working with Appwrite databases, including connection testing and collection management.
